@@ -49,8 +49,28 @@
         <ul>
           <li class="date" id="date"></li>
           <li class="description" id="description"></li>
-          <li class="temperature" id="temperature">°C</li>
         </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                id="icon"
+                class="weather-icon float-left"
+              />
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span>
+                <span class="units" id="units">°C | °F</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span class="humidity" id="humidity"></span>%</li>
+              <li>Wind: <span class="wind" id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
         <br />
         <div class="card-group">
           <div class="card">
