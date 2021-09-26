@@ -78,29 +78,4 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-function displayFarenTemp(event) {
-  event.preventDefault();
-  let tempElement = document.querySelector("#temperature");
-  let farenTemp = (celsiusTemp * 9) / 5 + 32;
-  celciusLink.classList.remove("active");
-  farenLink.classList.add("active");
-  tempElement.innerHTML = Math.round(farenTemp);
-}
-
-let farenLink = document.querySelector("#faren-link");
-farenLink.addEventListener("click", displayFarenTemp);
-
-function displayCelciusTemp(event) {
-  event.preventDefault();
-  celciusLink.classList.add("active");
-  farenLink.classList.remove("active");
-  let tempElement = document.querySelector("#temperature");
-  tempElement.innerHTML = Math.round(celsiusTemp);
-}
-
-let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click", displayCelciusTemp);
-
-let celsiusTemp = null;
-
 searchCity("New York");

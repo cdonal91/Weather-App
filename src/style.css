@@ -50,17 +50,6 @@ li::first-letter {
   line-height: 1;
 }
 
-.active {
-  cursor: default;
-  color: #525252;
-  text-decoration: none;
-}
-
-.active:hover {
-  text-decoration: none;
-  color: #525252;
-}
-
 .units {
   position: relative;
   top: -29px;
